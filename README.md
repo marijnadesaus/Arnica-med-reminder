@@ -1,4 +1,4 @@
-# Arnica, a fork of Calendula
+# Arnica, a fork of Calendula: Development Branch, please i'm still figuring this out so this will still be A Mess for now
 
 Arnica is a fork of Calendula, an app that hasn't been updated in quite a while, and I had some thoughts about taking the concept in a different direction. Most of the readme is the same as the original, I'll get to that
 
