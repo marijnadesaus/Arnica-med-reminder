@@ -1,9 +1,11 @@
-![](https://tec.citius.usc.es/calendula/github-assets/calendula_promo_google_play.png)
-# Calendula
+# Arnica, a fork of Calendula
 
+Arnica is a fork of Calendula, an app that hasn't been updated in quite a while, and I had some thoughts about taking the concept in a different direction. Most of the readme is the same as the original, I'll get to that
+
+### Links from Calendula
 Calendula is an Android assistant for personal medication management, aimed at those who have trouble following their medication regimen, forget to take their drugs, or have complex schedules that are difficult to remember.
 
-The app is available for download in Google Play, F-Droid and Github.
+The original calendula app is available for download in Google Play, F-Droid and Github.
 <table>
     <tr>
         <td align="center"><a href="https://play.google.com/store/apps/details?id=es.usc.citius.servando.calendula"><img src="https://play.google.com/intl/en_us/badges/images/badge_new.png" alt="Get it on Google Play" ></a></td>
@@ -12,13 +14,13 @@ The app is available for download in Google Play, F-Droid and Github.
     </tr>
 </table>
 
-Visit our web page for more info  [https://citius.usc.es/calendula/](https://citius.usc.es/calendula/)
+Visit their web page for more info  [https://citius.usc.es/calendula/](https://citius.usc.es/calendula/)
 
-## Getting Started
+### Getting Started With Helping Out
 
 These instructions will get you a copy of the project up and running on your local machine ready for development. If you want to help developing the app take a look to the contributing section, at the end.
 
-### Development environment setup
+#### Development environment setup
 
 We use [Android Studio](https://developer.android.com/studio/index.html) (the official Android IDE) for development, so we recommend it as the IDE to use in your development environment. Once you install Android Studio, you can use the Android SDK Manager to obtain the SDK tools, platforms, and other components you will need to start developing. The most important are:
 
@@ -34,8 +36,8 @@ You can also install other packages like emulators for running the app, if you d
 First of all you need to get the source code, so clone this repository  on your local machine:
 
 ```bash
-git clone https://github.com/citiususc/calendula.git
-cd calendula
+git clone https://github.com/marijnadesaus/Arnica-med-reminder.git
+cd Arnica-med-reminder
 ```
 
 Android Studio uses Gradle as the foundation of the build system, but it's not necessary to install it separately. Instead, you can use the included [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html). To build the app, open a terminal in the repository folder and run:
@@ -53,18 +55,7 @@ adb install Calendula/build/apk/develop/debug/developDebug-[version].apk
 
 These tasks can also be executed from Android Studio with a few clicks.
 
-## App versions
-
-We maintain releases of Calendula on Google Play, F-Droid and here on Github.
-
- * The latest version of the app available on those pages reflects the code of the `master` branch.
- * Release branches are usually deployed through the *Google Play BETA channel* before they are made available to everyone. If you want to be a member of the testing community, join the testing group on Google Groups, and you will automatically receive the updates from the BETA channel like normal updates from Google Play.
-
-> Join the  BETA channel: [click here!](https://play.google.com/apps/testing/es.usc.citius.servando.calendula)
-
-Check out the [contributing guidelines](CONTRIBUTING.md) for more info about the branching model.
-
-## How does it look?
+### How does it look? (from original app)
 
 We try to follow [Material Design](https://material.google.com/#) principles. Take a look at the result!
 
@@ -72,17 +63,26 @@ We try to follow [Material Design](https://material.google.com/#) principles. Ta
   |:---:|:---:|:---:|
   | <img src="https://tec.citius.usc.es/calendula/github-assets/aviso.png" width="230px"/> | <img src="https://tec.citius.usc.es/calendula/github-assets/navdrawer.png" width="230px"/> | <img src="https://tec.citius.usc.es/calendula/github-assets/profile.png" width="230px"/>
 
-## Future work
+## Future Ideas and improvements to make on the original
 
 We have a lot of development ideas, and we are open to newer ones. Below are some interesting features that could be very useful:
 
-* Information about nearby pharmacies, their locations and timetables
-* Trip assistant (how many pills I need for this weekend?)
-* Introducing [gamification](https://en.wikipedia.org/wiki/Gamification) concepts to improve adherence.
+- [ ] add alternate medication databases
+- [ ] Set up localisation platform
+- [ ] Support for titrating and schedules for changing dosages
+- [ ] Add a history tab, where you can see what meds you took/skipped at what times, and for what reason
+- [ ] Add more control to the alarm options
+- [ ] Allow taking meds earlier than schedule
+- [ ] Add routine offset options for weekends etc
+- [ ] Allow for replacing routine schedules with individual medication schedules, with their own separate alarms
+	- [ ] possibly add a dialogue asking if the user would like to add a med to a routine schedule during med creation
+- [ ] Look into shutdown alarm options
+- [ ] Look into a backup system
+- [ ] Allow more fine-grained control for notification options
 
 ## Artwork attribution
 
-We are using the the following resources in the app:
+The following resources are used in the app:
 
 * [People Vector Pack](http://www.freepik.com/free-vector/people-avatars_761436.htm) by [Freepik](http://www.freepik.com)
 * [Baby](http://www.flaticon.com/free-icon/baby_136272), [Dog](http://www.flaticon.com/free-icon/dog_194178) and [cat](http://www.flaticon.com/free-icon/cat_194179) icons by <a href="https://www.flaticon.com/" title="Flaticon">Flaticon</a> (<a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>)
@@ -90,17 +90,15 @@ We are using the the following resources in the app:
 
 ## Contributing
 
-Feel free to fork and send a pull request if you want to contribute to this project! Notice that Calendula is licensed under the terms of the [GNU General Public License (v3)](LICENSE.md), so by submitting content to the Calendula repository, you release your work under the terms of this license.
+Feel free to fork and send a pull request if you want to contribute to this project! Arnica is licensed under the terms of the [GNU General Public License (v3)](LICENSE.md), so by submitting content to the Arnica repository, you release your work under the terms of this license.
 
-Before starting, take a look at our [contribution guidelines](CONTRIBUTING.md).
+Before starting, take a look at the [contribution guidelines](CONTRIBUTING.md).
 
 ### I would like to contribute, but I'm not a developer...
 
-If you're not a developer but you want to help, don't worry! You can help [with app translations](CONTRIBUTING.md#help-with-app-translations), by [joining the BETA group](#app-versions), and [much more](CONTRIBUTING.md#i-would-like-to-contribute-but-im-not-a-developer)! Everyone is welcome!
+If you're not a developer but you want to help, don't worry! Neither am I! Any sort of idea on improvements will also help. Some sort of translation option thing will probably be made soon.
 
 ## License
-
-Copyright 2020 CITIUS - USC
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
